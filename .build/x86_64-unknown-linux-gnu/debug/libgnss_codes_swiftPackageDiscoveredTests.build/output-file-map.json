@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/primary.swiftdeps"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swiftPackageDiscoveredTests.derived/GNSSCodesTests.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/GNSSCodesTests.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/GNSSCodesTests.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/GNSSCodesTests~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/GNSSCodesTests.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/GNSSCodesTests.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swiftPackageDiscoveredTests.derived/all-discovered-tests.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/all-discovered-tests.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/all-discovered-tests.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/all-discovered-tests.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss_codes_swiftPackageDiscoveredTests.build/all-discovered-tests.dia"
+  }
+}

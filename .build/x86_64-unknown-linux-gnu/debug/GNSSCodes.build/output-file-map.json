@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/primary.swiftdeps"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Beidou.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/GNSSCodes.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/GPS.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Galileo.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Glonass.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.dia"
+  }
+}

@@ -1,0 +1,65 @@
+# libgnss-codes-swift
+
+A modern, type-safe Swift 6.0 library for generating GNSS ranging codes across multiple constellations. 
+
+This project is a high-performance port of the [libgnss-codes](https://github.com/shuwang1/libgnss-codes) C library, designed for use in GNSS software-defined receivers (SDR), simulators, and research tools.
+
+## Features
+
+- **Swift-Native Architecture**: Built from the ground up for Swift 6.0, leveraging enums for type safety and Swift Package Manager (SPM) for seamless integration.
+- **Multi-Constellation Support**:
+  - **GPS**: L1 C/A, L1C (Pilot/Data/Overlay), L2C (CM/CL), L5 (I/Q)
+  - **Galileo**: E1B/C, E5a (I/Q), E5b (I/Q)
+  - **GLONASS**: G1 (C/A)
+  - **BeiDou**: B1I
+- **Memory Safe**: Replaces manual C memory management with Swift's automatic memory management and safe array buffers.
+- **Bit-Perfect Parity**: Verified against the original C library and reference Matlab data.
+- **Rich Documentation**: Integrated DocC support for browsable API documentation.
+
+## Quick Start
+
+### Installation
+
+Add the package to your `Package.swift` dependencies:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/shuwang1/libgnss-codes-swift.git", from: "1.0.0")
+]
+```
+
+### Basic Usage
+
+```swift
+import GNSSCodes
+
+// Generate GPS L1 C/A chips for PRN 1
+if let code = GNSSCodes.generate(prn: 1, type: .L1CA) {
+    print("Signal: GPS L1 C/A")
+    print("Length: \(code.length) chips")
+    print("Rate: \(code.chipRate / 1e6) MHz")
+    print("First 5 chips: \(code.chips.prefix(5))")
+}
+
+// Generate Galileo E1B chips for PRN 10
+if let galileo = GNSSCodes.generate(prn: 10, type: .E1B) {
+    // Process Galileo chips...
+}
+```
+
+## Documentation & Testing
+
+- **Installation & Setup**: See [INSTALL.md](INSTALL.md) for detailed setup and build instructions.
+- **Verification**: Run `swift test` to execute the comprehensive test suite.
+- **API Reference**: Generate documentation with `swift package generate-documentation`.
+- **CI/CD**: Automated builds and tests are performed via GitHub Actions on every push to `main`. Documentation is automatically deployed to GitHub Pages.
+
+## License
+
+2016 All Rights Reserved by Shu Wang <shuwang1@outlook.com>
+This project is licensed under the same terms as the original `libgnss-codes` library. See the [LICENSE](LICENSE) file (if available) or contact Shu Wang <shuwang1@outlook.com>.
+
+## Credits
+
+Original C implementation by [Shu Wang](mailto:shuwang1@outlook.com).
+Swift port and optimization developed as part of Orientable internel C project.

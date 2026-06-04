@@ -1,0 +1,3 @@
+module SymbolKit {
+    header "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit-tool.build/include/SymbolKit-Swift.h"
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/primary.swiftdeps"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Tests/GNSSCodesTests/GNSSCodesTests.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/GNSSCodesTests.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/GNSSCodesTests.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/GNSSCodesTests~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/GNSSCodesTests.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/GNSSCodesTests.dia"
+  }
+}

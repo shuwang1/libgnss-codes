@@ -1,0 +1,13 @@
+# Build artifacts
+build/
+obj/
+gps-gen
+test_math
+
+# Simulation outputs
+*.bin
+
+# Other
+.DS_Store
+GEMINI.md
+*.mat

@@ -1,0 +1,320 @@
+{
+  "": {
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/primary.swiftdeps"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/Mixin/Mixin+Equals.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Equals.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Equals.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Equals~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Equals.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Equals.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/Mixin/Mixin+Hash.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Hash.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Hash.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Hash~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Hash.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin+Hash.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/Mixin/Mixin.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mixin.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/LineList/LineList.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/LineList.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/LineList.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/LineList~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/LineList.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/LineList.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/LineList/SourceRange/Position.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Position.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Position.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Position~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Position.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Position.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/LineList/SourceRange/SourceRange.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceRange.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceRange.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceRange~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceRange.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceRange.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Metadata.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Metadata.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Metadata.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Metadata~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Metadata.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Metadata.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Module.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Module.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Module.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Module~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Module.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Module.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/OperatingSystem.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/OperatingSystem.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/OperatingSystem.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/OperatingSystem~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/OperatingSystem.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/OperatingSystem.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Platform.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Platform.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Platform.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Platform~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Platform.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Platform.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Relationship/Relationship.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Relationship.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Relationship.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Relationship~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Relationship.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Relationship.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Relationship/RelationshipKind.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/RelationshipKind.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/RelationshipKind.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/RelationshipKind~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/RelationshipKind.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/RelationshipKind.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Relationship/SourceOrigin.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceOrigin.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceOrigin.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceOrigin~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceOrigin.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SourceOrigin.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Relationship/Swift/GenericConstraints.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraints.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraints.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraints~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraints.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraints.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Relationship/Swift/Swift.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Swift.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Swift.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Swift~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Swift.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Swift.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/SemanticVersion.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SemanticVersion.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SemanticVersion.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SemanticVersion~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SemanticVersion.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SemanticVersion.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/AccessControl.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AccessControl.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AccessControl.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AccessControl~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AccessControl.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AccessControl.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Availability/Availability.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Availability.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Availability.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Availability~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Availability.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Availability.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Availability/AvailabilityItem.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AvailabilityItem.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AvailabilityItem.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AvailabilityItem~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AvailabilityItem.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/AvailabilityItem.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Availability/Domain.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Domain.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Domain.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Domain~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Domain.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Domain.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/DeclarationFragments/DeclarationFragments.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/DeclarationFragments.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/DeclarationFragments.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/DeclarationFragments~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/DeclarationFragments.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/DeclarationFragments.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/DeclarationFragments/Fragment/Fragment.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Fragment.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Fragment.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Fragment~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Fragment.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Fragment.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/DeclarationFragments/Fragment/FragmentKind.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FragmentKind.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FragmentKind.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FragmentKind~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FragmentKind.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FragmentKind.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/FunctionSignature/FunctionParameter.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionParameter.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionParameter.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionParameter~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionParameter.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionParameter.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/FunctionSignature/FunctionSignature.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionSignature.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionSignature.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionSignature~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionSignature.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/FunctionSignature.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Identifier.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Identifier.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Identifier.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Identifier~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Identifier.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Identifier.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/KindIdentifier.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/KindIdentifier.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/KindIdentifier.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/KindIdentifier~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/KindIdentifier.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/KindIdentifier.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Location.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Location.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Location.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Location~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Location.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Location.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Mutability.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mutability.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mutability.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mutability~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mutability.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Mutability.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Names.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Names.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Names.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Names~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Names.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Names.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/SPI.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SPI.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SPI.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SPI~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SPI.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SPI.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Snippet.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Snippet.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Snippet.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Snippet~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Snippet.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Snippet.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Swift/Extension.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Extension.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Extension.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Extension~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Extension.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Extension.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Swift/GenericConstraint.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraint.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraint.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraint~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraint.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericConstraint.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Swift/GenericParameter.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericParameter.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericParameter.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericParameter~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericParameter.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GenericParameter.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Swift/Generics.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Generics.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Generics.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Generics~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Generics.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Generics.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Swift/Namespace.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Namespace.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Namespace.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Namespace~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Namespace.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Namespace.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/Symbol.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Symbol.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Symbol.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Symbol~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Symbol.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/Symbol.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/Symbol/SymbolKind.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolKind.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolKind.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolKind~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolKind.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolKind.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/SymbolGraph/SymbolGraph.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolGraph.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolGraph.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolGraph~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolGraph.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/SymbolGraph.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/UnifiedSymbolGraph/GraphCollector.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GraphCollector.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GraphCollector.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GraphCollector~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GraphCollector.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/GraphCollector.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/UnifiedSymbolGraph/UnifiedSymbol+Encodable.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol+Encodable.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol+Encodable.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol+Encodable~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol+Encodable.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol+Encodable.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/UnifiedSymbolGraph/UnifiedSymbol.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbol.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/UnifiedSymbolGraph/UnifiedSymbolGraph+Encodable.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph+Encodable.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph+Encodable.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph+Encodable~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph+Encodable.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph+Encodable.dia"
+  },
+  "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/checkouts/swift-docc-symbolkit/Sources/SymbolKit/UnifiedSymbolGraph/UnifiedSymbolGraph.swift": {
+    "dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph.d",
+    "object": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph.swift.o",
+    "swiftmodule": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph~partial.swiftmodule",
+    "swift-dependencies": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph.swiftdeps",
+    "diagnostics": "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/SymbolKit.build/UnifiedSymbolGraph.dia"
+  }
+}
