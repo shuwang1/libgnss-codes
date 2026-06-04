@@ -7,7 +7,90 @@
     }
   ],
   "copyCommands" : {
-
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E1B.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E1B.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E1B.bin"
+        }
+      ]
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E1C.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E1C.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E1C.bin"
+        }
+      ]
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5aI.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E5aI.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5aI.bin"
+        }
+      ]
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5aQ.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E5aQ.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5aQ.bin"
+        }
+      ]
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5bI.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E5bI.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5bI.bin"
+        }
+      ]
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5bQ.bin" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Resources/E5bQ.bin"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/libgnss-codes-swift_GNSSCodes.resources/E5bQ.bin"
+        }
+      ]
+    }
   },
   "explicitTargetDependencyImportCheckingMode" : {
     "none" : {
@@ -15,9 +98,9 @@
     }
   },
   "generatedSourceTargetSet" : [
+    "Swift_DocC",
     "libgnss_codes_swiftPackageDiscoveredTests",
-    "Swift_DocC_Preview",
-    "Swift_DocC"
+    "Swift_DocC_Preview"
   ],
   "pluginDescriptions" : [
     {
@@ -131,7 +214,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/swift-version-4F7367FF5016A4B9.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<GNSSCodes-x86_64-unknown-linux-gnu-debug.module-resources>"
         },
         {
           "kind" : "file",
@@ -146,7 +237,8 @@
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.swift.o",
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.swift.o",
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.swift.o",
-        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swift.o"
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swift.o",
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -161,7 +253,7 @@
         "-j8",
         "-DSWIFT_PACKAGE",
         "-DDEBUG",
-        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
         "-module-cache-path",
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
         "-parseable-output",
@@ -206,6 +298,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules/GNSSCodes.swiftmodule"
         }
       ],
@@ -215,7 +311,8 @@
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/GNSSCodes.swift",
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/GPS.swift",
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Galileo.swift",
-        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Glonass.swift"
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Glonass.swift",
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build",
       "wholeModuleOptimization" : false
@@ -297,6 +394,86 @@
         "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Tests/GNSSCodesTests/GNSSCodesTests.swift"
       ],
       "tempsPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Generator-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/home/shu/.local/share/swiftly/toolchains/6.3.2/usr/bin/swiftc",
+      "fileList" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/sources",
+      "importPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/Generator/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/swift-version-4F7367FF5016A4B9.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules/GNSSCodes.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Generator",
+      "moduleOutputPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules/Generator.swiftmodule",
+      "objects" : [
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Generator_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "libgnss_codes_swift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules/Generator.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/Generator/main.swift"
+      ],
+      "tempsPath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build",
       "wholeModuleOptimization" : false
     },
     "C.Snippets-x86_64-unknown-linux-gnu-debug-tool.module" : {
@@ -1916,6 +2093,7 @@
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/GPS.swift",
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Galileo.swift",
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Glonass.swift",
+      "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules",
       "-target",
@@ -1930,7 +2108,7 @@
       "-j8",
       "-DSWIFT_PACKAGE",
       "-DDEBUG",
-      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
       "-module-cache-path",
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
       "-parseable-output",
@@ -1982,6 +2160,51 @@
       "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "libgnss_codes_swift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/home/shu/.local/share/swiftly/toolchains/6.3.2/usr/bin/swiftc"
+    ],
+    "Generator" : [
+      "/home/shu/.local/share/swiftly/toolchains/6.3.2/usr/bin/swiftc",
+      "-module-name",
+      "Generator",
+      "-package-name",
+      "libgnss_codes_swift",
+      "-c",
+      "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/Generator/main.swift",
+      "-I",
+      "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Generator_main",
       "-color-diagnostics",
       "-swift-version",
       "6",
@@ -2270,6 +2493,9 @@
     "GNSSCodesTests" : [
       "GNSSCodes"
     ],
+    "Generator" : [
+      "GNSSCodes"
+    ],
     "Snippets" : [
 
     ],
@@ -2327,7 +2553,7 @@
     }
   },
   "traitConfiguration" : {
-    "enableAllTraits" : {
+    "default" : {
 
     }
   },
@@ -2358,6 +2584,10 @@
         {
           "kind" : "file",
           "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/GNSSCodes/Glonass.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
       "outputFilePath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/sources"
@@ -2375,6 +2605,66 @@
         }
       ],
       "outputFilePath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodesTests.build/sources"
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/Sources/Generator/main.swift"
+        }
+      ],
+      "outputFilePath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/sources"
+    },
+    "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Beidou.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GNSSCodes.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/GPS.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Galileo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/Generator.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Generator.product/Objects.LinkFileList"
     },
     "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/Snippets-tool.build/sources" : {
       "alwaysOutOfDate" : false,
@@ -2830,6 +3120,10 @@
         {
           "kind" : "file",
           "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/Glonass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/shu/Documents/GNSS-Simulation/libgnss-codes-swift/.build/x86_64-unknown-linux-gnu/debug/GNSSCodes.build/resource_bundle_accessor.swift.o"
         },
         {
           "kind" : "file",
