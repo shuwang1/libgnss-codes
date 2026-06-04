@@ -1,5 +1,7 @@
 # libgnss-codes-swift
 
+[![CI](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml/badge.svg)](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml)
+
 A modern, type-safe Swift 6.0 library for generating GNSS ranging codes across multiple constellations. 
 
 This project is a high-performance port of the Oriental AI C library.
@@ -62,4 +64,4 @@ This project is licensed under the same terms as the original `libgnss-codes` li
 ## Credits
 
 Original C implementation by [Shu Wang](mailto:shuwang1@outlook.com).
-Swift port and optimization developed as part of Orientable internel C project.
+Swift port and optimization developed as part of Orientable AI internel C project.
