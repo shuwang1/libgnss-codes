@@ -2,7 +2,7 @@
 
 A modern, type-safe Swift 6.0 library for generating GNSS ranging codes across multiple constellations. 
 
-This project is a high-performance port of the [libgnss-codes](https://github.com/shuwang1/libgnss-codes) C library, designed for use in GNSS software-defined receivers (SDR), simulators, and research tools.
+This project is a high-performance port of the Oriental AI C library.
 
 ## Features
 
