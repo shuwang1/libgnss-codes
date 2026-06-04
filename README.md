@@ -56,6 +56,12 @@ if let galileo = GNSSCodes.generate(prn: 10, type: .E1B) {
 - **API Reference**: Generate documentation with `swift package generate-documentation`.
 - **CI/CD**: Automated builds and tests are performed via GitHub Actions on every push to `main`. Documentation is automatically deployed to GitHub Pages.
 
+## Known Issues & Future Work
+
+- **SIMD Optimization**: Currently, chips are represented as `[Int16]`. Transitioning to bit-packed `[UInt64]` with SIMD-accelerated correlation is planned for a future release.
+- **Extended Constellation Support**: Porting of additional signals (e.g., L1 SBAS, NH10/20 integration) is ongoing.
+- **Resource Management**: Galileo binary resources are currently bundled. Exploring dynamic downloading or more compact packing formats to reduce initial clone size.
+
 ## License
 
 2016 All Rights Reserved by Shu Wang <shuwang1@outlook.com>

@@ -1,4 +1,5 @@
 # Build artifacts
+.build/
 build/
 obj/
 gps-gen
@@ -6,6 +7,7 @@ test_math
 
 # Simulation outputs
 *.bin
+!Sources/GNSSCodes/Resources/*.bin
 
 # Other
 .DS_Store

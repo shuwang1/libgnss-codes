@@ -13,7 +13,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "GNSSCodes"),
+            name: "GNSSCodes",
+            resources: [.process("Resources")]
+        ),
+        .executableTarget(
+            name: "Generator",
+            dependencies: ["GNSSCodes"]
+        ),
         .testTarget(
             name: "GNSSCodesTests",
             dependencies: ["GNSSCodes"]),

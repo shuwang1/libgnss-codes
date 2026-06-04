@@ -72,7 +72,7 @@ public class GNSSCodes {
     // MARK: - Internal Helpers (Ported from gnss_cmn.c)
     
     static func oct2bin(oct: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
-        var bin = [Int16]()
+        var bin = [Int16](repeating: 0, count: nbit)
         let octList: [[Int16]] = [
             [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
             [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
@@ -81,13 +81,17 @@ public class GNSSCodes {
         let chars = Array(oct)
         let skip = 3 * n - nbit
         
+        var outIdx = 0
         for i in 0..<n {
             let char = chars[i]
             guard let val = Int(String(char)), val >= 0, val < 8 else { continue }
             for k in 0..<3 {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 3 - skip { continue }
-                bin.append(octList[val][k])
+                if outIdx < nbit {
+                    bin[outIdx] = octList[val][k]
+                    outIdx += 1
+                }
             }
         }
         
@@ -98,7 +102,7 @@ public class GNSSCodes {
     }
     
     static func hex2bin(hex: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
-        var bin = [Int16]()
+        var bin = [Int16](repeating: 0, count: nbit)
         let hexList: [[Int16]] = [
             [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
             [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
@@ -109,13 +113,17 @@ public class GNSSCodes {
         let chars = Array(hex)
         let skip = 4 * n - nbit
         
+        var outIdx = 0
         for i in 0..<n {
             let char = chars[i]
             guard let val = Int(String(char), radix: 16) else { continue }
             for k in 0..<4 {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 4 - skip { continue }
-                bin.append(hexList[val][k])
+                if outIdx < nbit {
+                    bin[outIdx] = hexList[val][k]
+                    outIdx += 1
+                }
             }
         }
         

@@ -19,21 +19,16 @@ extension GNSSCodes {
     static let LEN_L5 = 10230
     static let CRATE_L5 = 10.23E6
     
-    nonisolated(unsafe) private static var legendre: [Int8]?
-    
-    private static func generateLegendreSequence() {
-        if legendre != nil { return }
+    private static let legendre: [Int8] = {
         var seq = [Int8](repeating: 1, count: 10223)
         for i in 0..<10224 {
             seq[(i * i) % 10223] = -1
         }
         seq[0] = 1
-        legendre = seq
-    }
+        return seq
+    }()
     
     static func generateL1CA(prn: Int, length: inout Int, chipRate: inout Double) -> [Int16]? {
-        guard prn >= 1 && prn <= MAXGPSSATNO else { return nil }
-        
         let delay: [Int] = [
              5,   6,   7,   8,  17,  18, 139, 140, 141, 251,
            252, 254, 255, 256, 257, 258, 469, 470, 471, 472,
@@ -58,32 +53,50 @@ extension GNSSCodes {
            173, 900,  30, 500, 935, 556, 373,  85, 652, 310 
         ]
         
+        guard prn >= 1 && prn <= delay.count else { return nil }
+        
         var G1 = [Int8](repeating: 0, count: LEN_L1CA)
         var G2 = [Int8](repeating: 0, count: LEN_L1CA)
         var R1 = [Int8](repeating: 1, count: 10)
         var R2 = [Int8](repeating: 1, count: 10)
         
-        for i in 0..<LEN_L1CA {
-            G1[i] = R1[9]
-            G2[i] = R2[9]
-            let C1 = -(R1[2] * R1[9])
-            let C2 = -(R2[1] * R2[2] * R2[5] * R2[7] * R2[8] * R2[9])
-            
-            for j in (1...9).reversed() {
-                R1[j] = R1[j-1]
-                R2[j] = R2[j-1]
+        G1.withUnsafeMutableBufferPointer { g1Buf in
+            G2.withUnsafeMutableBufferPointer { g2Buf in
+                R1.withUnsafeMutableBufferPointer { r1Buf in
+                    R2.withUnsafeMutableBufferPointer { r2Buf in
+                        for i in 0..<LEN_L1CA {
+                            g1Buf[i] = r1Buf[9]
+                            g2Buf[i] = r2Buf[9]
+                            let C1 = -(r1Buf[2] * r1Buf[9])
+                            let p1 = r2Buf[1] * r2Buf[2] * r2Buf[5]
+                            let p2 = r2Buf[7] * r2Buf[8] * r2Buf[9]
+                            let C2 = -(p1 * p2)
+                            
+                            for j in (1...9).reversed() {
+                                r1Buf[j] = r1Buf[j-1]
+                                r2Buf[j] = r2Buf[j-1]
+                            }
+                            r1Buf[0] = C1
+                            r2Buf[0] = C2
+                        }
+                    }
+                }
             }
-            R1[0] = C1
-            R2[0] = C2
         }
         
         var code = [Int16](repeating: 0, count: LEN_L1CA)
         let prnDelay = delay[prn - 1]
         var j = (LEN_L1CA - prnDelay) % LEN_L1CA
         
-        for i in 0..<LEN_L1CA {
-            code[i] = Int16(G1[i]) * Int16(G2[j])
-            j = (j + 1) % LEN_L1CA
+        code.withUnsafeMutableBufferPointer { codeBuf in
+            G1.withUnsafeMutableBufferPointer { g1Buf in
+                G2.withUnsafeMutableBufferPointer { g2Buf in
+                    for i in 0..<LEN_L1CA {
+                        codeBuf[i] = Int16(g1Buf[i]) * Int16(g2Buf[j])
+                        j = (j + 1) % LEN_L1CA
+                    }
+                }
+            }
         }
         
         length = LEN_L1CA
@@ -92,8 +105,7 @@ extension GNSSCodes {
     }
     
     static func generateWeilCode(prn: Int, codes: [Int16], inserts: [Int], length: Int) -> [Int16]? {
-        generateLegendreSequence()
-        guard let leg = legendre else { return nil }
+        let leg = legendre
         
         let w = codes[prn - 1]
         let p = inserts[prn - 1] - 1
@@ -161,7 +173,10 @@ extension GNSSCodes {
             235,  512, 1078, 1078,  953, 5647,  669, 1311, 5827,   15
         ]
         
+        guard prn >= 1 && prn <= weil.count && prn <= insert.count else { return nil }
+        
         length = LEN_L1CD
+
         chipRate = CRATE_L1C
         return generateWeilCode(prn: prn, codes: weil, inserts: insert, length: LEN_L1CD)
     }
@@ -213,6 +228,8 @@ extension GNSSCodes {
            4918,  787, 9864, 9753, 9859,  328,    1, 4733,  164,  135,
             174,  132,  538,  176,  198,  595,  574,  321,  596,  491
         ]
+        
+        guard prn >= 1 && prn <= weil.count && prn <= insert.count else { return nil }
         
         length = LEN_L1CP
         chipRate = CRATE_L1C
@@ -358,7 +375,7 @@ extension GNSSCodes {
             0o722462133, 0o050172213, 0o500653703, 0o755077436, 0o136717361, 0o756675453,
             0o435506112
         ]
-        guard prn >= 1 && prn <= MAXGPSSATNO else { return nil }
+        guard prn >= 1 && prn <= CM_init.count else { return nil }
         length = LEN_L2CM
         chipRate = CRATE_L2C
         return generateL2C(initValue: CM_init[prn - 1], length: LEN_L2CM)
@@ -374,20 +391,14 @@ extension GNSSCodes {
             0o102300466, 0o255231716, 0o437661701, 0o717047302, 0o222614207, 0o561123307,
             0o240713073
         ]
-        guard prn >= 1 && prn <= MAXGPSSATNO else { return nil }
+        guard prn >= 1 && prn <= CL_init.count else { return nil }
         length = LEN_L2CL
         chipRate = CRATE_L2C
         return generateL2C(initValue: CL_init[prn - 1], length: LEN_L2CL)
     }
 
     static func xorMask(_ val: UInt16, _ mask: UInt16) -> Int {
-        var res = val & mask
-        var bit = 0
-        while res != 0 {
-            bit ^= Int(res & 1)
-            res >>= 1
-        }
-        return bit
+        return (val & mask).nonzeroBitCount % 2
     }
 
     static func generateL5(prn: Int, isQ: Bool, length: inout Int, chipRate: inout Double) -> [Int16]? {

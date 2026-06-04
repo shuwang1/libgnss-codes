@@ -15,7 +15,7 @@ extension GNSSCodes {
             [8, 10], [8, 11], [9, 10], [9, 11], [10, 11]
         ]
         
-        guard prn >= 1 && prn <= MAXBEIDOUSATNO else { return nil }
+        guard prn >= 1 && prn <= tap.count else { return nil }
         
         var R1 = [Int8](repeating: 0, count: 11)
         var R2 = [Int8](repeating: 0, count: 11)
@@ -26,19 +26,30 @@ extension GNSSCodes {
             R2[i] = (i % 2 == 0) ? -1 : 1
         }
         
-        for i in 0..<LEN_B1I {
-            let g2Out = -(Int16(R2[tap[prn - 1][0] - 1]) * Int16(R2[tap[prn - 1][1] - 1]))
-            code[i] = -(Int16(R1[10]) * g2Out)
-            
-            let C1 = -(R1[0] * R1[6] * R1[7] * R1[8] * R1[9] * R1[10])
-            let C2 = -(R2[0] * R2[1] * R2[2] * R2[3] * R2[4] * R2[7] * R2[8] * R2[10])
-            
-            for j in (1...10).reversed() {
-                R1[j] = R1[j-1]
-                R2[j] = R2[j-1]
+        code.withUnsafeMutableBufferPointer { codeBuf in
+            R1.withUnsafeMutableBufferPointer { r1Buf in
+                R2.withUnsafeMutableBufferPointer { r2Buf in
+                    for i in 0..<LEN_B1I {
+                        let g2Out = -(Int16(r2Buf[tap[prn - 1][0] - 1]) * Int16(r2Buf[tap[prn - 1][1] - 1]))
+                        codeBuf[i] = -(Int16(r1Buf[10]) * g2Out)
+                        
+                        let p1_1 = r1Buf[0] * r1Buf[6] * r1Buf[7]
+                        let p1_2 = r1Buf[8] * r1Buf[9] * r1Buf[10]
+                        let C1 = -(p1_1 * p1_2)
+                        
+                        let p2_1 = r2Buf[0] * r2Buf[1] * r2Buf[2] * r2Buf[3]
+                        let p2_2 = r2Buf[4] * r2Buf[7] * r2Buf[8] * r2Buf[10]
+                        let C2 = -(p2_1 * p2_2)
+                        
+                        for j in (1...10).reversed() {
+                            r1Buf[j] = r1Buf[j-1]
+                            r2Buf[j] = r2Buf[j-1]
+                        }
+                        r1Buf[0] = C1
+                        r2Buf[0] = C2
+                    }
+                }
             }
-            R1[0] = C1
-            R2[0] = C2
         }
         
         length = LEN_B1I
