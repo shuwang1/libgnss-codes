@@ -440,7 +440,10 @@ extension GNSSCodes {
         
         var code = [Int16](repeating: 0, count: LEN_L5)
         for i in 0..<LEN_L5 {
-            code[i] = ((xa & 1) ^ (xb & 1)) != 0 ? 1 : -1
+            let output = (xa & 1) ^ (xb & 1)
+            // ⚡ Bolt: Branchless math eliminates conditional ternary branch for code assignment
+            // to avoid CPU branch mispredictions and pipeline flushes in PRN generator loops.
+            code[i] = Int16(output << 1) - 1
             
             if xa == XA_DECODE {
                 xa = 0x1FFF
