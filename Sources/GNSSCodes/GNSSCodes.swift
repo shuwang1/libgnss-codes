@@ -83,6 +83,7 @@ public class GNSSCodes {
         
         var outIdx = 0
         for i in 0..<n {
+            guard i < chars.count else { break }
             let char = chars[i]
             guard let val = Int(String(char)), val >= 0, val < 8 else { continue }
             for k in 0..<3 {
@@ -115,6 +116,7 @@ public class GNSSCodes {
         
         var outIdx = 0
         for i in 0..<n {
+            guard i < chars.count else { break }
             let char = chars[i]
             guard let val = Int(String(char), radix: 16) else { continue }
             for k in 0..<4 {
