@@ -71,12 +71,20 @@ public class GNSSCodes {
     
     // MARK: - Internal Helpers (Ported from gnss_cmn.c)
     
+    private static let octList: [[Int16]] = [
+        [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
+        [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
+    ]
+
+    private static let hexList: [[Int16]] = [
+        [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
+        [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
+        [ 1,-1,-1,-1],[ 1,-1,-1, 1],[ 1,-1, 1,-1],[ 1,-1, 1, 1],
+        [ 1, 1,-1,-1],[ 1, 1,-1, 1],[ 1, 1, 1,-1],[ 1, 1, 1, 1]
+    ]
+
     static func oct2bin(oct: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
-        let octList: [[Int16]] = [
-            [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
-            [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
-        ]
         
         let chars = Array(oct)
         let skip = 3 * n - nbit
@@ -103,12 +111,6 @@ public class GNSSCodes {
     
     static func hex2bin(hex: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
-        let hexList: [[Int16]] = [
-            [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
-            [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
-            [ 1,-1,-1,-1],[ 1,-1,-1, 1],[ 1,-1, 1,-1],[ 1,-1, 1, 1],
-            [ 1, 1,-1,-1],[ 1, 1,-1, 1],[ 1, 1, 1,-1],[ 1, 1, 1, 1]
-        ]
         
         let chars = Array(hex)
         let skip = 4 * n - nbit
