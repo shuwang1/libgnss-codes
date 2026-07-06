@@ -355,16 +355,13 @@ extension GNSSCodes {
         for i in 0..<length {
             let output = state & 1
 
-            // ⚡ Bolt: Branchless math eliminates conditional ternary branch for code assignment
-            // Original: output != 0 ? 1 : -1 -> If 1, return 1; if 0, return -1.
-            code[i] = Int16(output << 1) - Int16(1)
+            code[i] = output != 0 ? 1 : -1
             
             state >>= 1
 
-            // ⚡ Bolt: Branchless XOR update using bitwise mask eliminates branch mispredictions
-            // on LFSR iterations (up to 767,250 loops for L2CL).
-            let mask = UInt32(0) &- output
-            state ^= (L2C_TAPS_MASK & mask)
+            if output != 0 {
+                state ^= L2C_TAPS_MASK
+            }
 
             state |= (output << 26)
         }
@@ -440,8 +437,10 @@ extension GNSSCodes {
         
         var code = [Int16](repeating: 0, count: LEN_L5)
         for i in 0..<LEN_L5 {
-            // ⚡ Bolt: Branchless math eliminates conditional ternary branch for code assignment
             let output = (xa & 1) ^ (xb & 1)
+
+            // ⚡ Bolt: Branchless math eliminates conditional ternary branch for code assignment
+            // Original: ((xa & 1) ^ (xb & 1)) != 0 ? 1 : -1 -> If 1, return 1; if 0, return -1.
             code[i] = Int16(output << 1) - Int16(1)
             
             if xa == XA_DECODE {
