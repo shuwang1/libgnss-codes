@@ -74,10 +74,6 @@ public class GNSSCodes {
     // ⚡ Bolt optimization: Use utf8 processing directly to avoid slow Array(String) allocation and String(char) casting
     static func oct2bin(oct: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
-        let octList: [[Int16]] = [
-            [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
-            [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
-        ]
         
         let utf8 = Array(oct.utf8)
         let skip = 3 * n - nbit
@@ -94,7 +90,8 @@ public class GNSSCodes {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 3 - skip { continue }
                 if outIdx < nbit {
-                    bin[outIdx] = octList[val][k]
+                    // ⚡ Bolt: Calculate binary value mathematically instead of lookup array
+                    bin[outIdx] = Int16(((val >> (2 - k)) & 1) << 1) - 1
                     outIdx += 1
                 }
             }
@@ -109,12 +106,6 @@ public class GNSSCodes {
     // ⚡ Bolt optimization: Use utf8 processing directly to avoid slow Array(String) allocation and radix String(char) parsing
     static func hex2bin(hex: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
-        let hexList: [[Int16]] = [
-            [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
-            [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
-            [ 1,-1,-1,-1],[ 1,-1,-1, 1],[ 1,-1, 1,-1],[ 1,-1, 1, 1],
-            [ 1, 1,-1,-1],[ 1, 1,-1, 1],[ 1, 1, 1,-1],[ 1, 1, 1, 1]
-        ]
         
         let utf8 = Array(hex.utf8)
         let skip = 4 * n - nbit
@@ -139,7 +130,8 @@ public class GNSSCodes {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 4 - skip { continue }
                 if outIdx < nbit {
-                    bin[outIdx] = hexList[val][k]
+                    // ⚡ Bolt: Calculate binary value mathematically instead of lookup array to prevent cache misses
+                    bin[outIdx] = Int16(((val >> (3 - k)) & 1) << 1) - 1
                     outIdx += 1
                 }
             }
@@ -165,17 +157,21 @@ public class GNSSCodes {
     
     static func boc(code: [Int16], length: inout Int, chipRate: inout Double, m: Int, n: Int) -> GNSSCode {
         let N = 2 * m / n
-        var bocCode = [Int16]()
-        bocCode.reserveCapacity(N * code.count)
+        let newCount = N * code.count
         
-        for chip in code {
-            for _ in 0..<N {
-                bocCode.append(chip)
+        var bocCode = [Int16](repeating: 0, count: newCount)
+        
+        // ⚡ Bolt: Use UnsafeMutableBufferPointer to avoid array append/bounds-checking overhead
+        // and fuse the alternating negation loop into the initial population loop.
+        bocCode.withUnsafeMutableBufferPointer { buffer in
+            var outIdx = 0
+            for chip in code {
+                for _ in 0..<N {
+                    // Alternating signs: at even indices, negate the chip
+                    buffer[outIdx] = (outIdx & 1 == 0) ? -chip : chip
+                    outIdx += 1
+                }
             }
-        }
-        
-        for i in 0..<(N * code.count / 2) {
-            bocCode[2 * i] = -bocCode[2 * i]
         }
         
         length *= N
