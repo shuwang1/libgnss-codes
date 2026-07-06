@@ -97,7 +97,8 @@ public class GNSSCodes {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 3 - skip { continue }
                 if outIdx < nbit {
-                    bin[outIdx] = octList[val][k]
+                    // ⚡ Bolt: Calculate binary value mathematically instead of lookup array
+                    bin[outIdx] = Int16(((val >> (2 - k)) & 1) << 1) - 1
                     outIdx += 1
                 }
             }
@@ -123,7 +124,8 @@ public class GNSSCodes {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 4 - skip { continue }
                 if outIdx < nbit {
-                    bin[outIdx] = hexList[val][k]
+                    // ⚡ Bolt: Calculate binary value mathematically instead of lookup array to prevent cache misses
+                    bin[outIdx] = Int16(((val >> (3 - k)) & 1) << 1) - 1
                     outIdx += 1
                 }
             }
