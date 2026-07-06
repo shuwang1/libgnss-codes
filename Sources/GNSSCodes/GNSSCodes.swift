@@ -147,17 +147,21 @@ public class GNSSCodes {
     
     static func boc(code: [Int16], length: inout Int, chipRate: inout Double, m: Int, n: Int) -> GNSSCode {
         let N = 2 * m / n
-        var bocCode = [Int16]()
-        bocCode.reserveCapacity(N * code.count)
+        let newCount = N * code.count
         
-        for chip in code {
-            for _ in 0..<N {
-                bocCode.append(chip)
+        var bocCode = [Int16](repeating: 0, count: newCount)
+        
+        // ⚡ Bolt: Use UnsafeMutableBufferPointer to avoid array append/bounds-checking overhead
+        // and fuse the alternating negation loop into the initial population loop.
+        bocCode.withUnsafeMutableBufferPointer { buffer in
+            var outIdx = 0
+            for chip in code {
+                for _ in 0..<N {
+                    // Alternating signs: at even indices, negate the chip
+                    buffer[outIdx] = (outIdx & 1 == 0) ? -chip : chip
+                    outIdx += 1
+                }
             }
-        }
-        
-        for i in 0..<(N * code.count / 2) {
-            bocCode[2 * i] = -bocCode[2 * i]
         }
         
         length *= N
