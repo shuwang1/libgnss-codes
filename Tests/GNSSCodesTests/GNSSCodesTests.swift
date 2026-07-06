@@ -53,6 +53,8 @@ import Testing
     let code = GNSSCodes.generate(prn: 1, type: .L1CO)
     #expect(code != nil)
     #expect(code?.chips.count == 1800)
+}
+
 @Test func testL1CP_PRN1() {
     let code = GNSSCodes.generate(prn: 1, type: .L1CP)
     #expect(code != nil)
