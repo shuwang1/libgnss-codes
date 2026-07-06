@@ -1,3 +1,6 @@
+## 2024-05-18 - [Eliminating Modulo Ops in Tight Signal DSP Loops]
+**Learning:** Modulo (`%`) operators in tight Swift signal generation loops (like `generateWeilCode`) run 10,000+ times per generation and emit expensive `idiv` instructions, creating a performance bottleneck.
+**Action:** Replace modulo logic in array index calculations with loop splitting (processing `0..<split` and `split..<end` separately) or using branch logic (`val += 1; if val == max { val = 0 }`) to dramatically improve generation speed without sacrificing readability.
 ## 2024-06-16 - Array Allocation vs Branchless Math in Swift LFSRs
 **Learning:** In this GNSS code generator, replacing simple ternary logic like `(i % 2 == 0) ? -1 : 1` with bitwise math does NOT improve performance because the LLVM compiler natively optimizes this into branchless CSEL/CMOV instructions. Instead, local 2D array initializations (used as lookups) inside frequently called functions (like `hex2bin`) cause repeated, expensive heap allocations in Swift.
 **Action:** When optimizing loop-heavy Swift functions, focus on moving array literals out of local scope or replacing them with direct mathematical calculations rather than attempting to hand-write branchless logic over basic conditionals.
