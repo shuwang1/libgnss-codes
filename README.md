@@ -1,6 +1,6 @@
 # libgnss-codes-swift
 
-[![CI](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml/badge.svg)](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml)
+[![CI](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml/badge.svg)](https://github.com/shuwang1/Orientable-libgnss-code/actions/workflows/ci.yml)[![Documentation](https://github.com/shuwang1/libgnss-codes/actions/workflows/docs.yml/badge.svg)](https://github.com/shuwang1/libgnss-codes/actions/workflows/docs.yml)
 
 A modern, type-safe Swift 6.0 library for generating GNSS ranging codes across multiple constellations. 
 

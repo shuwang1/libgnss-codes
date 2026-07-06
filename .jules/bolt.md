@@ -1,3 +1,10 @@
+## 2024-06-16 - Array Allocation vs Branchless Math in Swift LFSRs
+**Learning:** In this GNSS code generator, replacing simple ternary logic like `(i % 2 == 0) ? -1 : 1` with bitwise math does NOT improve performance because the LLVM compiler natively optimizes this into branchless CSEL/CMOV instructions. Instead, local 2D array initializations (used as lookups) inside frequently called functions (like `hex2bin`) cause repeated, expensive heap allocations in Swift.
+**Action:** When optimizing loop-heavy Swift functions, focus on moving array literals out of local scope or replacing them with direct mathematical calculations rather than attempting to hand-write branchless logic over basic conditionals.
 ## 2024-05-18 - [Branchless LFSR for PRN Generation]
 **Learning:** Pseudo-random noise (PRN) generation using Linear Feedback Shift Registers (LFSR) suffers from severe branch misprediction rates when using conditional logic (`if output != 0`) inside highly iterative inner loops (e.g., L2C code generation which runs up to 767,250 times).
 **Action:** Use branchless bitwise arithmetic (e.g., `let mask = 0 &- output; state ^= (mask & taps)`) to avoid costly pipeline flushes in PRN generator loops.
+
+## 2024-10-24 - [LLVM Branchless Optimizations & Heap Pressure]
+**Learning:** Manual branchless bitwise arithmetic to replace simple ternary operators is an anti-pattern. Modern Swift compilers (LLVM) automatically optimize simple ternaries into branchless conditional instructions (CMOV/CSEL). Additionally, allocating static lookup tables locally within frequently called helper functions (like `oct2bin`) causes unnecessary, repeated heap allocations and deallocations.
+**Action:** Rely on LLVM to optimize simple ternaries for better readability, and prioritize hoisting local array allocations in frequently called paths to static properties to reduce heap pressure and garbage collection overhead.
