@@ -111,28 +111,38 @@ extension GNSSCodes {
         let p = inserts[prn - 1] - 1
         let insertBit: [Int16] = [-1, 1, 1, -1, 1, -1, -1]
         
-        var weilCode = [Int16](repeating: 0, count: 10223)
         let wInt = Int(w)
 
-        // ⚡ Bolt Optimization: Loop splitting to remove expensive modulo operations
-        // Replaces `(i + w) % 10223` by handling the boundary condition explicitly.
-        // This is ~3-5x faster in tight loops by avoiding integer division instructions.
-        let splitPoint = 10223 - wInt
-
-        for i in 0..<splitPoint {
-            let ind = i + wInt
-            weilCode[i] = Int16(-leg[i]) * Int16(leg[ind])
-        }
-
-        for i in splitPoint..<10223 {
-            let ind = i + wInt - 10223
-            weilCode[i] = Int16(-leg[i]) * Int16(leg[ind])
+        // ⚡ Bolt: Use `unsafeUninitializedCapacity` and split the loop to avoid modulo operator
+        let weilCode = [Int16](unsafeUninitializedCapacity: 10223) { buffer, initializedCount in
+            leg.withUnsafeBufferPointer { legBuf in
+                var i = 0
+                while i < 10223 - wInt {
+                    buffer[i] = Int16(-legBuf[i]) * Int16(legBuf[i + wInt])
+                    i += 1
+                }
+                while i < 10223 {
+                    buffer[i] = Int16(-legBuf[i]) * Int16(legBuf[i + wInt - 10223])
+                    i += 1
+                }
+            }
+            initializedCount = 10223
         }
         
-        var code = [Int16](repeating: 0, count: length)
-        for i in 0..<p { code[i] = weilCode[i] }
-        for j in 0..<7 { code[p + j] = insertBit[j] }
-        for i in (p + 7)..<length { code[i] = weilCode[i - 7] }
+        // ⚡ Bolt: Use `unsafeUninitializedCapacity` instead of repeated zeroes to avoid memory waste
+        let code = [Int16](unsafeUninitializedCapacity: length) { buffer, initializedCount in
+            var outIdx = 0
+
+            // ⚡ Bolt: Replace with memory copy loops for speed
+            weilCode.withUnsafeBufferPointer { weilBuf in
+                insertBit.withUnsafeBufferPointer { insertBuf in
+                    for i in 0..<p { buffer[outIdx] = weilBuf[i]; outIdx += 1 }
+                    for i in 0..<7 { buffer[outIdx] = insertBuf[i]; outIdx += 1 }
+                    for i in p..<(length - 7) { buffer[outIdx] = weilBuf[i]; outIdx += 1 }
+                }
+            }
+            initializedCount = length
+        }
         
         return code
     }
