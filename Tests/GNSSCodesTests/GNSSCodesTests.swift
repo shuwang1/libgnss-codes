@@ -49,6 +49,10 @@ import Testing
     #expect(code?.chips.count == 20460) // BOC(1,1) of 10230 is 20460
 }
 
+@Test func testL1CO_PRN1() {
+    let code = GNSSCodes.generate(prn: 1, type: .L1CO)
+    #expect(code != nil)
+    #expect(code?.chips.count == 1800)
 @Test func testL1CP_PRN1() {
     let code = GNSSCodes.generate(prn: 1, type: .L1CP)
     #expect(code != nil)
