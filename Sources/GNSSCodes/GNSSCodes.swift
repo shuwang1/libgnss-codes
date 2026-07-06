@@ -71,29 +71,21 @@ public class GNSSCodes {
     
     // MARK: - Internal Helpers (Ported from gnss_cmn.c)
     
-    private static let octList: [[Int16]] = [
-        [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
-        [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
-    ]
-
-    private static let hexList: [[Int16]] = [
-        [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
-        [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
-        [ 1,-1,-1,-1],[ 1,-1,-1, 1],[ 1,-1, 1,-1],[ 1,-1, 1, 1],
-        [ 1, 1,-1,-1],[ 1, 1,-1, 1],[ 1, 1, 1,-1],[ 1, 1, 1, 1]
-    ]
-
+    // ⚡ Bolt optimization: Use utf8 processing directly to avoid slow Array(String) allocation and String(char) casting
     static func oct2bin(oct: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
         
-        let chars = Array(oct)
+        let utf8 = Array(oct.utf8)
         let skip = 3 * n - nbit
         
         var outIdx = 0
         for i in 0..<n {
-            guard i < chars.count else { break }
-            let char = chars[i]
-            guard let val = Int(String(char)), val >= 0, val < 8 else { continue }
+            guard i < utf8.count else { break }
+            let code = utf8[i]
+            // ascii 0-7 is 48-55
+            guard code >= 48 && code <= 55 else { continue }
+            let val = Int(code - 48)
+
             for k in 0..<3 {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 3 - skip { continue }
@@ -111,17 +103,29 @@ public class GNSSCodes {
         return bin
     }
     
+    // ⚡ Bolt optimization: Use utf8 processing directly to avoid slow Array(String) allocation and radix String(char) parsing
     static func hex2bin(hex: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
         
-        let chars = Array(hex)
+        let utf8 = Array(hex.utf8)
         let skip = 4 * n - nbit
         
         var outIdx = 0
         for i in 0..<n {
-            guard i < chars.count else { break }
-            let char = chars[i]
-            guard let val = Int(String(char), radix: 16) else { continue }
+            guard i < utf8.count else { break }
+            let code = utf8[i]
+
+            let val: Int
+            if code >= 48 && code <= 57 { // 0-9
+                val = Int(code - 48)
+            } else if code >= 65 && code <= 70 { // A-F
+                val = Int(code - 65 + 10)
+            } else if code >= 97 && code <= 102 { // a-f
+                val = Int(code - 97 + 10)
+            } else {
+                continue
+            }
+
             for k in 0..<4 {
                 if !skiplast && i == 0 && k < skip { continue }
                 if skiplast && i == n - 1 && k >= 4 - skip { continue }
