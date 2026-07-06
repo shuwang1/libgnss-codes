@@ -71,6 +71,18 @@ public class GNSSCodes {
     
     // MARK: - Internal Helpers (Ported from gnss_cmn.c)
     
+    private static let octList: [[Int16]] = [
+        [-1, -1, -1], [-1, -1, 1], [-1, 1, -1], [-1, 1, 1],
+        [1, -1, -1], [1, -1, 1], [1, 1, -1], [1, 1, 1]
+    ]
+
+    private static let hexList: [[Int16]] = [
+        [-1,-1,-1,-1],[-1,-1,-1, 1],[-1,-1, 1,-1],[-1,-1, 1, 1],
+        [-1, 1,-1,-1],[-1, 1,-1, 1],[-1, 1, 1,-1],[-1, 1, 1, 1],
+        [ 1,-1,-1,-1],[ 1,-1,-1, 1],[ 1,-1, 1,-1],[ 1,-1, 1, 1],
+        [ 1, 1,-1,-1],[ 1, 1,-1, 1],[ 1, 1, 1,-1],[ 1, 1, 1, 1]
+    ]
+
     static func oct2bin(oct: String, n: Int, nbit: Int, skiplast: Bool = false, flip: Bool = false) -> [Int16] {
         var bin = [Int16](repeating: 0, count: nbit)
         
