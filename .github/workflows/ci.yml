@@ -23,4 +23,8 @@ jobs:
         run: swift build
 
       - name: Run tests
-        run: swift test
+        run: swift test  --enable-code-coverage
+      - name: Upload
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_SHUWANG1_LIBGNSS_CODES_TOKEN }}
