@@ -422,8 +422,10 @@ extension GNSSCodes {
         return generateL2C(initValue: CL_init[prn - 1], length: LEN_L2CL)
     }
 
+    @inline(__always)
     static func xorMask(_ val: UInt16, _ mask: UInt16) -> Int {
-        return (val & mask).nonzeroBitCount % 2
+        // ⚡ Bolt: Use bitwise AND for parity to avoid expensive idiv instructions in tight PRN loop
+        return (val & mask).nonzeroBitCount & 1
     }
 
     static func generateL5(prn: Int, isQ: Bool, length: inout Int, chipRate: inout Double) -> [Int16]? {

@@ -33,3 +33,6 @@
 ## 2024-10-24 - [LLVM Branchless Optimizations & Heap Pressure]
 **Learning:** Manual branchless bitwise arithmetic to replace simple ternary operators is an anti-pattern. Modern Swift compilers (LLVM) automatically optimize simple ternaries into branchless conditional instructions (CMOV/CSEL). Additionally, allocating static lookup tables locally within frequently called helper functions (like `oct2bin`) causes unnecessary, repeated heap allocations and deallocations.
 **Action:** Rely on LLVM to optimize simple ternaries for better readability, and prioritize hoisting local array allocations in frequently called paths to static properties to reduce heap pressure and garbage collection overhead.
+## 2024-11-20 - [Bitwise Parity Check in Tight Loops]
+**Learning:** Using modulo operations (`% 2`) on signed integers (like `.nonzeroBitCount` in Swift) to calculate parity can emit expensive `idiv` instructions, becoming a noticeable bottleneck when called repeatedly in tight loops (e.g., L5 generation loops running 10,230 times per PRN).
+**Action:** Replace modulo `x % 2` with bitwise AND `x & 1` for parity checks. Additionally, apply `@inline(__always)` to small, highly-called helper functions to eliminate call overhead.
