@@ -372,22 +372,25 @@ extension GNSSCodes {
     static func generateL2C(initValue: UInt32, length: Int) -> [Int16] {
         let L2C_TAPS_MASK: UInt32 = 0x0094953C
         var state = initValue
-        var code = [Int16](repeating: 0, count: length)
         
-        for i in 0..<length {
-            let output = state & 1
+        // ⚡ Bolt: Use `unsafeUninitializedCapacity` to avoid costly array zero-initialization
+        // and branchless math to prevent conditional jumps
+        return [Int16](unsafeUninitializedCapacity: length) { buffer, initializedCount in
+            for i in 0..<length {
+                let output = state & 1
 
-            code[i] = output != 0 ? 1 : -1
-            
-            state >>= 1
+                buffer[i] = Int16(output << 1) - 1
 
-            if output != 0 {
-                state ^= L2C_TAPS_MASK
+                state >>= 1
+
+                if output != 0 {
+                    state ^= L2C_TAPS_MASK
+                }
+
+                state |= (output << 26)
             }
-
-            state |= (output << 26)
+            initializedCount = length
         }
-        return code
     }
 
     static func generateL2CM(prn: Int, length: inout Int, chipRate: inout Double) -> [Int16]? {
