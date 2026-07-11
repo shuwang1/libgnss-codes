@@ -19,14 +19,13 @@ extension GNSSCodes {
         
         var R1 = [Int8](repeating: 0, count: 11)
         var R2 = [Int8](repeating: 0, count: 11)
-        var code = [Int16](repeating: 0, count: LEN_B1I)
-        
         for i in 0..<11 {
             R1[i] = (i % 2 == 0) ? -1 : 1
             R2[i] = (i % 2 == 0) ? -1 : 1
         }
         
-        code.withUnsafeMutableBufferPointer { codeBuf in
+        let code = [Int16](unsafeUninitializedCapacity: LEN_B1I) { codeBuf, initializedCount in
+            initializedCount = LEN_B1I
             R1.withUnsafeMutableBufferPointer { r1Buf in
                 R2.withUnsafeMutableBufferPointer { r2Buf in
                     for i in 0..<LEN_B1I {

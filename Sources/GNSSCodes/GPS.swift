@@ -84,11 +84,11 @@ extension GNSSCodes {
             }
         }
         
-        var code = [Int16](repeating: 0, count: LEN_L1CA)
         let prnDelay = delay[prn - 1]
         var j = (LEN_L1CA - prnDelay) % LEN_L1CA
         
-        code.withUnsafeMutableBufferPointer { codeBuf in
+        let code = [Int16](unsafeUninitializedCapacity: LEN_L1CA) { codeBuf, initializedCount in
+            initializedCount = LEN_L1CA
             G1.withUnsafeMutableBufferPointer { g1Buf in
                 G2.withUnsafeMutableBufferPointer { g2Buf in
                     for i in 0..<LEN_L1CA {
@@ -338,8 +338,9 @@ extension GNSSCodes {
         T1[10] = -1
         T2[10] = -1
         
-        var code = [Int16](repeating: 0, count: LEN_L1CO)
-        for i in 0..<LEN_L1CO {
+        let code = [Int16](unsafeUninitializedCapacity: LEN_L1CO) { codeBuf, initializedCount in
+            initializedCount = LEN_L1CO
+            for i in 0..<LEN_L1CO {
             let S1 = R1[10]
             let S2 = R2[10]
             
@@ -358,10 +359,11 @@ extension GNSSCodes {
             R2[0] = C2
             
             if prn >= 64 {
-                code[i] = Int16(-S1 * S2)
+                codeBuf[i] = Int16(-S1 * S2)
             } else {
-                code[i] = Int16(-S1)
+                codeBuf[i] = Int16(-S1)
             }
+        }
         }
         
         length = LEN_L1CO
@@ -462,11 +464,12 @@ extension GNSSCodes {
         var xa: UInt16 = 0x1FFF
         var xb: UInt16 = isQ ? Q5is[prn - 1] : I5is[prn - 1]
         
-        var code = [Int16](repeating: 0, count: LEN_L5)
-        for i in 0..<LEN_L5 {
+        let code = [Int16](unsafeUninitializedCapacity: LEN_L5) { codeBuf, initializedCount in
+            initializedCount = LEN_L5
+            for i in 0..<LEN_L5 {
             // ⚡ Bolt: Branchless math eliminates conditional ternary branch for code assignment
             // Original: code[i] = ((xa & 1) ^ (xb & 1)) != 0 ? 1 : -1
-            code[i] = Int16(((xa & 1) ^ (xb & 1)) << 1) - 1
+            codeBuf[i] = Int16(((xa & 1) ^ (xb & 1)) << 1) - 1
             
             if xa == XA_DECODE {
                 xa = 0x1FFF
@@ -477,6 +480,7 @@ extension GNSSCodes {
             
             let xbNew = xorMask(xb, XB_MASK)
             xb = (xb >> 1) | (UInt16(xbNew) << 12)
+        }
         }
         
         length = LEN_L5

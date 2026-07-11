@@ -7,9 +7,8 @@ extension GNSSCodes {
     
     static func generateG1G2(length: inout Int, chipRate: inout Double) -> [Int16]? {
         var R = [Int8](repeating: -1, count: 9)
-        var code = [Int16](repeating: 0, count: LEN_G1G2)
-        
-        code.withUnsafeMutableBufferPointer { codeBuf in
+        let code = [Int16](unsafeUninitializedCapacity: LEN_G1G2) { codeBuf, initializedCount in
+            initializedCount = LEN_G1G2
             R.withUnsafeMutableBufferPointer { rBuf in
                 for i in 0..<LEN_G1G2 {
                     codeBuf[i] = Int16(-rBuf[6])
