@@ -65,3 +65,8 @@ import Testing
     let code = GNSSCodes.generate(prn: 49, type: .E1B)
     #expect(code != nil)
 }
+
+@Test func testLoadCodeErrorHandlingInvalid() {
+    let code = GNSSCodes.generate(prn: 99, type: .E1B)
+    #expect(code == nil)
+}
