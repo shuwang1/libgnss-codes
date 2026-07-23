@@ -30,7 +30,8 @@ extension GNSSCodes {
                 return Array(slice)
             }
         } catch {
-            print("Error loading \(name).bin: \(error)")
+            // 🛡️ Sentinel: Removed raw error interpolation to prevent information leakage (e.g., exposing absolute file paths in production)
+            print("Error loading resource: \(name).bin")
             return nil
         }
     }
