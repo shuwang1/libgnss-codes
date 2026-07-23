@@ -60,3 +60,13 @@ import Testing
     #expect(code != nil)
     #expect(code?.chips.count == 20460) // BOC(1,1) of 10230 is 20460
 }
+
+@Test func testLoadCodeErrorHandling() {
+    let code = GNSSCodes.generate(prn: 49, type: .E1B)
+    #expect(code != nil)
+}
+
+@Test func testLoadCodeErrorHandlingInvalid() {
+    let code = GNSSCodes.generate(prn: 99, type: .E1B)
+    #expect(code == nil)
+}
